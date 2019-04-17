@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Karol Makara Web-Developer</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Makara Front-end Developer">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript,Makara,Developer, Front, end,Front-end, MakaraDeveloper">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<meta name="google-site-verification" content="oKv09c1vVJx6exVPPleUOkGOpYYrzBDiiWcKH0wzzMk" />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<link href='http://fonts.googleapis.com/css?family=Caveat&subset=latin,latin-ext' rel='stylesheet'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Coiny&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="top_bkground">
+		<header>
+			<h1> Witam na mojej stronie. </h1>
+			<h2>
+				Nazywam się Karol Makara. Od dłuższego czasu kształcę się w kierunku pracy jako Web Developer. W obecnej chwili
+				zajmuję się tym amatorsko, ale poprzez ciężką pracę cały czas rozwijam swoje umiejętności. Strona którą widzisz
+				jest pokazem moich umiejętności.
+			</h2>
+		</header>
+	</div>
+
+	<div id="arrow">
+		<i class="fa fa-chevron-down" aria-hidden="true"></i>
+	</div>
+	<main>
+		<h2>Trochę o mnie...</h2>
+		<div id="container">
+			<div class="aboutme">
+				<h2>
+					<i class="fab fa-css3-alt"></i>
+					<i class="fab fa-html5"></i>
+				</h2>
+				<h3>Nauka</h3>
+				<article>
+					Pierwsze moje strony tworzyłem od 2016 roku, na zajęciach przygotowujących do kwalifikacji. Już wtedy polubiłem
+					tworzyć strony interentowe i wymyślanie własnych projektów.Wykonywanie różnych zadań pozwoliły mi dogłębne
+					poznania języka HTML i CSS. Z biegiem czasu poznałem podstawy Java Script, lecz była to nauka indywidualna, co nie
+					pozwiliło mi na poznanie tego języka w zadowalającym stopniu.
+				</article>
+			</div>
+			<div class="aboutme">
+				<h2>
+					<i class="fab fa-angular"></i>
+					<i class="fab fa-js-square"></i>
+				</h2>
+				<h3>
+					Dalszy rozwój
+				</h3>
+				<article>
+					W przyszłości planuję rozwijać się w znanych mi technologiach, jak i wciąż poznawać nowe, gdyż w tej pracy jest to nieuniknione.
+					Myślę nad nauką Back-end, mianowicie Node.js, bądź nauki jednego z topowych CMS-ów.
+				</article>
+			</div>
+			<div class="aboutme">
+				<h2>
+					<i class="fas fa-desktop"></i>
+				</h2>
+				<h3>Plany zawodowe</h3>
+				<article>
+					Aktualnie staram się dostać na staż związany ze stronami internetowymi, by wciąż pogłębiać swoją wiedzę na
+					temat Front-end i efektywniej uczyć się nowych języków pod okiem doświadczonych programistów. Biorę pod uwagę
+					również ubieganie się o posadę Junior Developera, jeśli moje umiejętności okażą się wystarczająco dobre na to
+					stanowisko.
+					<br>W między czasię planuję studiować zaocznie.
+				</article>
+			</div>
+		</div>
+	</main>
+	<section class="technologies">
+        <h2>Projekty</h2>
+    	<div id="projects">
+		    <a href="https://github.com/karol4862"> GitHub </a>
+		</div>
+		<h2>Znane mi technologie</h2>
+		<div id="technologiesBox">
+			<section class="card"> <h3>HTML 5</h3> <i class="fab fa-html5"></i></section>
+			<section class="card"><h3>CSS 3</h3><i class="fab fa-css3-alt"></i></section>
+			<section class="card"><h3>JavaScript</h3><i class="fab fa-js-square"></i></section>
+			<section class="card"><h3>Sass</h3><i class="fab fa-sass"></i></section>
+			<section class="card"><h3>React</h3><i class="fab fa-react"></i></section>
+			<section class="card"><h3>Git</h3><i class="fab fa-git-square"></i></section>
+		</div>
+	</section>
+	<footer>
+		<h2>Kontakt</h2>
+		<p>E-mail: karol_makara17@wp.pl</p>
+		<p> Nr telefonu: 530 357 063</p>
+	</footer>
+
+	<div id="up">
+		<span>Up</span>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+		const arrow = $("#arrow");
+		const heightMain = $("main").offset().top;
+
+		arrow.on("click", function () {
+			$("html").animate({
+				scrollTop: heightMain
+			}, 600)
+		})
+		
+		const heightFooter = $("footer").offset().top;
+		const up = $("#up");
+		const windowHeight = $(window).height();
+		
+		
+		up.on("click", function () {
+			if(up.hasClass("active"))
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600)
+				
+			})
+
+		
+
+		$(document).on("scroll", function () {
+
+			if ($(document).scrollTop() > heightFooter  - windowHeight) {
+				up.addClass("active")
+			} else {
+				up.removeClass("active")
+
+			}
+
+			
+			
+			
+		})
+	</script>
+</body>
+
+</html>
