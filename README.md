@@ -1,7 +1,5 @@
 # HomePage
-My CV as website.
-Mainly used HTML, CSS with RWD.
-Simple, pretty page.
+My CV as website. 
 
 ## Demo
 https://karol4862.github.io/HomePage/
